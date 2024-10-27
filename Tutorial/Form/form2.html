@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  
+</head>
+<body class="bg-dark">
+  
+     <div class="container bg-dark position-absolute top-50 start-50 translate-middle" style="width: 40%;">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-white"> Fill in the Data Below</h4>
+                <form id="form" >
+
+                    <div class="text-white">
+                        <label for="firstname"></label>
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Please Enter First Name"  >
+                    </div>
+                    
+                    <div class="text-white"><label for="lastname"></label>
+                        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Please Enter Last Name"  ></div>
+                    
+
+                    <div class="text-white"> 
+                        <label for="father's name"></label>
+                    <input type="text" class="form-control" name="fathername" id="fathername" placeholder="Please Enter Father's Name"  >
+                </div>
+
+                <div class="text-white "> 
+                    <label for="mother's name"></label>
+                    <input type="text" class="form-control" name="mothername" id="mothername" placeholder="Please Enter Mother's name"  >
+                </div>
+
+                <div class="text-white ">
+                    <label for="Aadhar card"></label>
+                    <input type="number" class="form-control" name="AadharNo" id="AadharNo" placeholder="Enter valid Adhar no."   >
+                </div>
+
+                <div class="text-white">
+                     <label for="PAN card"></label>
+                    <input type="text" class="form-control" name="PANNo" id="PANNo" placeholder="Enter Valid PAN No."  >
+                </div>
+
+                <div class="text-white ">
+                     <label for="Voting Card"></label>
+                    <input type="text" class="form-control" name="VotingNo" id="VotingNo" placeholder="Enter Valid Voting Card no."  >
+                </div>
+
+                <div class="text-white mt-3">
+                     <button type="submit" onclick="mydata()" class="btn btn-primary mb-3" >SUBMIT</button>
+                    </div>
+
+                </form>
+
+                
+            </div>
+            
+        </div>
+        <p id="fname" class="text-white"></p>
+        <p id="lname" class="text-white"></p>
+        <p id="faname" class="text-white"></p>
+        <p id="moname" class="text-white"></p>
+        <p id="adharno" class="text-white"></p>
+        <p id="panno" class="text-white"></p>
+        <p id="votingno" class="text-white"></p>
+     </div>
+     
+ 
+     <script>
+    
+      function mydata(){
+
+       event.preventDefault();
+
+    
+      document.getElementById("fname").innerHTML = ('First Name: ' + firstname.value);
+      document.getElementById("lname").innerHTML = ('Last name: ' + lastname.value);
+      document.getElementById("faname").innerHTML = ('Father,s Name: ' + fathername.value);
+      document.getElementById("moname").innerHTML = ('Mother,s Name: ' + mothername.value);
+      document.getElementById("adharno").innerHTML = ('Aadhar number: ' + AadharNo.value);
+      document.getElementById("panno").innerHTML = ('PAN number: ' + PANNo.value);
+      document.getElementById("votingno").innerHTML = ('Voting number: ' + VotingNo.value);
+
+    
+      }  
+
+     </script>
+</body>
+</html>

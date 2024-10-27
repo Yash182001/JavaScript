@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>
+          JavaScript
+        </title>
+        <script src="tut.js"></script>
+    </head>
+    <body>
+         <p id="demo">This is a paragraph</p>
+
+         <button type="button" onclick="myfunction()">Click Here</button>
+
+         <button type="button" onclick="window.print()">Print</button>
+
+
+         <p id="demo1">Good Evening!</p>
+         <p id="demo2">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+if(new Date().getHours()>12){
+    document.getElementById("demo2").innerHTML= "Good Afternoon";
+}
+
+</script>
+
+<button onclick="document.getElementById('bulb').src='bulbon.png'">ON</button>
+<img src="bulb off.png" class="img-fluid" style="width: 100px;" id="bulb">
+<button onclick="document.getElementById('bulb').src='bulb off.png'" >OFF</button>
+
+<p>Input the No between no 1and 10</p>
+<input id="numb">
+<button onclick="myfunction2()">Submit</button>
+<p id="demo3"></p>
+
+
+<form action="/action_page.php" method="post">
+  <input type="text" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+ <h3>Pushing Objects into an array</h3>
+
+ <p id="person"></p>
+ <script>
+
+  //creating a object//
+   const person = {firstname: "Neon",lastname:"Rektifire",age:23,loc:"Nagpur"}
+
+   //Display Object Data
+  document.getElementById("person").innerHTML= person.firstname + person.lastname +" is " + person.age
+
+ </script>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+<script>
+ //Array
+  let People = [
+   {
+     name:"Nicholas",
+     position:"Leader"
+   },
+   {
+     name:"Trevor",
+     position:"ANY"
+   }
+
+  ];
+//Objects to be added
+  const people1 = { name:"Mike",
+  position:"Driver",};
+
+  const people2 = { name:"Franklin",
+  position:"Doctor"};
+
+  const people3 = {
+   name:"Lester",
+   position:"Project"
+  }
+
+  
+
+  People.push(people1,people2,people3);
+ console.log(People);
+   
+
+</script>
+
+<script>
+  const greeting = "hello";
+  greeting.length = 10;
+  console.log(greeting.length);
+  console.log(length.greeting);
+</script>
+
+    </body>
+</html>

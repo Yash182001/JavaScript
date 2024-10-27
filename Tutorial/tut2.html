@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title> Javascript tutorial</title>
+    </head>
+
+    <body >
+
+       <p id="demo1"></p>
+       <p id="demo2"></p>
+       <p id="object"></p>
+       <p id="string"></p>
+       <p id="array-string"></p>
+    
+
+        <script>
+
+        //     for (let i = 0; i < 10; i++) {
+        //     console.log(i);
+        //   }
+
+//         const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30
+// };
+
+// for (const property in person) {
+//   console.log(`${property}: ${person[property]}`);
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+// for (const number of numbers) {
+//   console.log(number);
+// } 
+
+ //creating functions
+
+//    let text =typeof carname;
+//    document.getElementById("demo1").innerHTML=text;
+
+//    function car(){
+//     let carname="Suzuki";
+//     let text = typeof carname;
+//     document.getElementById("demo2").innerHTML=text;
+//    }
+
+
+//    car();
+
+//OBJECTS
+
+
+// const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+//      document.getElementById("object").innerHTML=person.firstName;
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//       cars: {
+//               car1: "Ford",
+//               car2: "BMW",
+//               car3: "Fiat"
+//   }
+//  }
+
+//   document.getElementById("object").innerHTML=person.cars.car2
+
+//Object.values converts object into an array
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+document.getElementById("object").innerHTML = Object.values(person);
+
+//JSON.stringify converts objects into a string
+let myString = JSON.stringify(person);
+document.getElementById("string").innerHTML = myString;
+
+//it can also stringify arrays
+const arr = ["John", "Peter", "Sally", "Jane"];
+
+let myarrString = JSON.stringify(arr);
+document.getElementById("array-string").innerHTML = myString;
+
+        </script>
+       
+    </body>
+</html>
